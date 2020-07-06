@@ -1,0 +1,242 @@
+/*Create By Juan Carlos Gamboa*/
+
+@import url(https://fonts.googleapis.com/css?family=Yeseva+One);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic,400italic);
+
+body {
+    line-height: 1;
+    background: radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+/* Header */
+
+header {
+    padding: 20px 20px 20px 20px;
+    height: 80px;
+
+    border-radius: 5px;
+
+    border-bottom: 1px solid rgb(221, 221, 221);
+    background: #e3e3e3;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding-top: 10px;
+}
+
+header li {
+    display: inline;
+    vertical-align: middle;
+}
+
+header li:first-child {
+    margin: 0;
+}
+
+header li a {
+    margin: 0 10px;
+}
+
+header li.logo {
+    font-size: 36px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header .right {
+    float: right;
+    margin: 0 10px 15px;
+}
+
+/* Body */
+
+body {
+    flex-direction: column;
+    display: flex;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    font-family: 'Josefin Sans', serif;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+article h1, h2, h3, h4, h5, h6 {
+    font-family: 'Yeseva One', sans-serif;
+    text-align: center;
+}
+
+article .redesl {
+    text-align: center;
+}
+
+/* Main */
+
+main {
+    flex-direction: row;
+    flex: auto;
+    display: flex;
+
+    background: #fff;
+}
+
+/* Positioning and margins */
+
+@media (min-width: 1100px) {
+    body {
+        width: 1100px;
+        margin: 0 auto;
+    }
+}
+
+/* Article */
+
+article {
+    overflow-y: auto;
+    flex: 2;
+
+    padding: 50px 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+article > *:first-child {
+    margin-top: 0;
+}
+
+article img {
+    border-radius: 10%;
+    margin: 20px auto;
+}
+
+article div .devicess {
+    width: 50%;
+}
+
+article p {
+    text-align: justify;
+}
+
+/* Aside */
+
+aside {
+    overflow-y: auto;
+    flex: 1;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 50px 15px;
+    background: #FAFAFA;
+}
+
+/* Footer */
+
+footer {
+    padding: 5px 15px;
+    height: 80px;
+    background: #969d9d;
+    flex-direction: row;
+    flex: auto;
+    display: flex;
+}
+
+footer .right {
+    float: right;
+    margin: auto;
+}
+
+footer a {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+a {
+    color: #F80002;
+}
+
+footer .right img {
+    width: 200px;
+}
+
+/* Text styles and margins */
+
+p {
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 40px 0 20px;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 30px 0 15px;
+}
+
+h3 {
+    font-size: 28px;
+    margin: 25px 0 10px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 10px;
+}
+
+h6 {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+time {
+    color: #999;
+    text-align: left;
+}
+
+@media (max-width: 800px) {
+    body.works_on_smartphone {
+        display: block;
+    }
+
+    body.works_on_smartphone main {
+        display: block;
+    }
+
+    header .right {
+        float: none;
+    }
+
+}
+
+/* image JS challenge */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+img.small {
+    width: 100px;
+}
