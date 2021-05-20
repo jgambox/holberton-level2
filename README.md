@@ -1,4 +1,4 @@
-# holberton-level2
+# HOLBERTON TECHNICAL PROJECT: Level2 (Interview)
 Interview technical project - build web page
 
 # check web page
